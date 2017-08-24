@@ -9,13 +9,20 @@ router.get('/', function(req, res, next) {
   var options = {
     customFields: {
       item: [
-        ['ev:location', 'location'],
-        ['ev:startdate', 'startDate'],
-        ['ev:enddate', 'endDate'],
-        ['ev:localstartdate', 'localStartDate'],
-        ['ev:localenddate', 'localEndDate'],
-        ['s:teamlogo', 'teamLogo'],
-        ['s:opponentlogo', 'opponentLogo']
+        ["title", "title"],
+        ["description", "description"],
+        ["link", "link"],
+        ["guid", "guid"],
+        ["ev:location", "location"],
+        ["ev:startdate", "startDate"],
+        ["ev:enddate", "endDate"],
+        ["s:localstartdate", "localStartDate"],
+        ["s:localenddate", "localEndDate"],
+        ["s:teamlogo", "teamLogo"],
+        ["s:opponentlogo", "opponentLogo"],
+        ["s:gameid", "gameId"],
+        ["s:gamepromoname", "gamePromoName"],
+        ["s:links", "links"],
       ]
     }
   };
@@ -30,13 +37,20 @@ router.get('/:team_id', function(req, res, next) {
   var options = {
     customFields: {
       item: [
-        ['ev:location', 'location'],
-        ['ev:startdate', 'startDate'],
-        ['ev:enddate', 'endDate'],
-        ['ev:localstartdate', 'localStartDate'],
-        ['ev:localenddate', 'localEndDate'],
-        ['s:teamlogo', 'teamLogo'],
-        ['s:opponentlogo', 'opponentLogo']
+        ["title", "title"],
+        ["description", "description"],
+        ["link", "link"],
+        ["guid", "guid"],
+        ["ev:location", "location"],
+        ["ev:startdate", "startDate"],
+        ["ev:enddate", "endDate"],
+        ["s:localstartdate", "localStartDate"],
+        ["s:localenddate", "localEndDate"],
+        ["s:teamlogo", "teamLogo"],
+        ["s:opponentlogo", "opponentLogo"],
+        ["s:gameid", "gameId"],
+        ["s:gamepromoname", "gamePromoName"],
+        ["s:links", "links"],
       ]
     }
   };
